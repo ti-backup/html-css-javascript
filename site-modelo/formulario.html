@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>## Formulário ##</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+	</head>
+	<body>
+		<div id="principal">
+			<header>
+				<h1>Formulário de Cadastro</h1>
+			</header>
+
+			<main>
+				<form action="cadastro.php">
+					<p>*Campos de preenchimento obrigatório.</p>
+					<div>
+						<label for="nome">*Nome:</label>
+						<input id="nome" type="text" name="nome" placeholder="Nome Completo ..." required />
+					</div>
+
+					<div>
+						<label for="foto">Foto:</label>
+						<input id="foto" type="file" name="foto"  accept="image/gif, image/jpeg" />
+					</div>
+
+					<div class="l50">
+						<label for="idade">*Idade:</label>
+						<input id="idade" type="number" name="idade" min="1" max="120" required />
+					</div>
+
+					<div class="l50">
+						<label for="cor">Cor Preferida:</label>
+						<input id="cor" type="color" name="cor" />
+					</div>
+
+					<div>
+						<label for="nascimento">Data de nascimento:</label>
+						<input id="nascimento" type="date" name="nascimento" />
+					</div>
+
+					<fieldset>
+						<legend>Idiomas</legend>
+						<label for="ingles">Inglês:</label>
+						<input id="ingles" type="range" name="ingles" min="0" max="10" step="1" />
+						<label for="espanhol">Espanhol:</label>
+						<input id="espanhol" type="range" name="espanhol" min="0" max="10" step="1" />
+					</fieldset>
+
+					<div class="l50">
+						<label for="email">*E-mail:</label>
+						<input id="email" type="email" name="email" required />
+					</div>
+
+					<div class="l50">
+						<label for="estadoCivil">Estado Civil:</label>
+						<select id="estadoCivil" name="estadoCivil">
+							<option value="solteiro">Solteiro</option>
+							<option selected value="casado">Casado</option>
+							<option value="viuvo">Viúvo</option>
+							<option value="divorciado">Divorciado</option>
+						</select>
+					</div>
+					<fieldset>
+						<legend>Sexo</legend>
+						<input id="masculino" type="radio" name="sexo" value="M" checked />
+						<label for="masculino">Masculino</label>
+						<input id="feminino" type="radio" name="sexo" value="F" />
+						<label for="feminino">Feminino</label>
+					</fieldset>
+					<div>
+						<input id="noticias" type="checkbox" name="noticias" checked value="sim" />
+						<label for="noticias">Aceita receber notícias de ofertas do nosso site.</label>
+					</div>
+					<div>
+						<label for="obs">Observações:</label>
+						<textarea id="obs" name="obs" cols="100" rows="7"></textarea>
+					</div>
+					<button type="submit">Enviar</button>
+					<button type="reset">Limpar</button>
+				</form>
+			</main>
+
+			<footer>
+				
+			</footer>
+		</div>
+	</body>
+</html>
