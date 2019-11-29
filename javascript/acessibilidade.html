@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>..:: Acessibilidade ::..</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function mudaTamanho(){
+                var tamanho = document.getElementById("tamanho").value;
+                var paragrafos = document.getElementsByTagName("p");
+
+                var i;
+                for (i = 0; i < paragrafos.length; i++){
+                    paragrafos[i].style.fontSize = tamanho;
+                }
+            }
+        </script>
+       <p>
+           <label for="tamanho">Tamanho da fonte:</label>
+           <select id="tamanho" onchange="mudaTamanho()">
+                <option value="8px">8 px</option>
+                <option value="10px">10 px</option>
+                <option value="12px">12 px</option>
+                <option value="14px">14 px</option>
+                <option value="16px">16 px</option>
+                <option value="18px">18 px</option>
+                <option value="20px">20 px</option>
+           </select>
+       </p>
+       <h1>Por 8 votos a 3, STF decide que Receita Federal pode compartilhar informações sigilosas com MP</h1>
+       <p>O Supremo Tribunal Federal (STF) decidiu nesta quinta-feira (28) por 8 votos a 3 autorizar o compartilhamento pela Receita Federal – sem necessidade de autorização judicial – de informações bancárias e fiscais sigilosas com o Ministério Público e as polícias – essas informações incluem extratos bancários e declarações de Imposto de Renda de contribuintes investigados.</p>
+       <p>Com a decisão, deixa de valer a liminar que, em julho, paralisou todos os procedimentos do país que compartilharam dados detalhados de movimentações consideradas suspeitas (entenda mais abaixo).</p>
+       <p>Com relação ao compartilhamento de dados do antigo Coaf (atual Unidade de Inteligência Financeira, UIF), também houve maioria no julgamento a favor de permitir o compartilhamento. Mas, em razão do horário, a sessão foi encerrada, e o julgamento deve ser retomado na próxima quarta-feira (4) para a definição de uma regra de como isso será feito.</p>
+       <p>O julgamento, que se iniciou na semana passada, foi retomado na tarde desta quinta-feira. Foram cinco sessões de julgamento. Os ministros se reuniram para decidir quais seriam os limites a esse compartilhamento, ou seja, que tipo de documento poderá ser compartilhado e em quais situações o compartilhamento exigiria autorização judicial.</p>
+       <p>No dia anterior, havia se formado maioria (6 a 0) em relação ao compartilhamento de informações genéricas da Unidade de Inteligência Financeira (UIF, antigo Coaf), da Receita Federal e do Banco Central. Nesse caso, o julgamento terminou com nove votos a favor do compartilhamento e dois contra.</p>
+    </body>
+</html>

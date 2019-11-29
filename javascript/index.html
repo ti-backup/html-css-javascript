@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>..:: Javascript - Hello World ::..</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function saudacao(){
+                var nome = document.getElementById("nome").value;
+                var usuario = document.getElementById("usuario");
+                var cadeado = document.getElementById("cadeado");
+
+                alert("Olá, " + nome + "!");
+                usuario.innerHTML = "Logado como: " + nome;
+                cadeado.src = "img/unlocked.png";
+            }
+        </script>
+
+        <header>
+            <h1>
+                <img id="cadeado" src="img/locked.png"> 
+                <span id="usuario"></span>
+            </h1>
+        </header>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" />
+            <button type="button" onclick="saudacao()">Saudação</button>
+        </form>
+    </body>
+</html>

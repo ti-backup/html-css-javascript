@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>..:: Muda Estilo ::..</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function mudaCor(){
+                var cor = document.getElementById("cor").value;
+                var filmes = document.getElementsByTagName("li");
+
+                var i;
+                for(i = 0; i < filmes.length; i++){
+                    filmes[i].style.color = cor;
+                }
+            }
+        </script>
+        <p>
+            <label for="cor">Cor dos itens:</label>
+            <input type="color" id="cor" onchange="mudaCor()" />
+        </p>
+        <h1>Filmes</h1>
+        <ul>
+            <li>Venom</li>
+            <li>Homem-Formiga</li>
+            <li>Guerra Infinita</li>
+            <li>A Freira</li>
+            <li>Bruna Surfistinha</li>
+        </ul>
+    </body>
+</html>
