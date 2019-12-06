@@ -12,11 +12,11 @@
         <h1>Formulário de Cadastro</h1>
         <div>
             <label for="nome">*Nome:</label>
-            <input type="text" id="nome" />
+            <input type="text" id="nome" required />
         </div>
         <div>
             <label for="senha">Senha:</label>
-            <input type="password" id="senha" />
+            <input type="password" id="senha" onblur="verificaSenha()" />
             <button type="button" id="btnSenha" onclick="visualizaSenha('senha', 'btnSenha')">@</button>
         </div>
         <div>
@@ -59,7 +59,7 @@
         </fieldset>
         <div>
             <label for="cep">CEP:</label>
-            <input type="text" id="cep" />
+            <input type="text" id="cep" required pattern="\d{5}-?\d{3}" />
             <label for="cep">ex.: 99999-999</label>
         </div>
 
