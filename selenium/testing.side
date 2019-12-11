@@ -1,0 +1,78 @@
+{
+  "id": "f460290e-6850-47fa-aadc-4d77bd1f001b",
+  "version": "2.0",
+  "name": "testing",
+  "url": "http://localhost:52330/form-validation.html",
+  "tests": [{
+    "id": "ea2cd799-22ad-4e7c-8568-0adbd2546746",
+    "name": "nameTest",
+    "commands": [{
+      "id": "3edca9c1-8663-422f-b825-92118314ce9b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:52330/form-validation.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5f76452-5a3c-4961-9b6a-ee0ebb9f26de",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ded16521-eea7-4c2b-91ed-752fc6ba70d2",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Salmo"
+    }, {
+      "id": "8b890f59-6378-47d6-9b84-f71f569ee83f",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=nome",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "272bae96-819c-487b-8e50-1dfd0132ea6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2) > button",
+      "targets": [
+        ["css=p:nth-child(2) > button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83fdb61b-303c-4106-b5cd-e3b9fa44c7fb",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "${name}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e8da425a-159e-4b72-a2af-fa246f207e0a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ea2cd799-22ad-4e7c-8568-0adbd2546746"]
+  }],
+  "urls": [],
+  "plugins": []
+}
