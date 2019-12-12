@@ -9,12 +9,41 @@
     <title>..:: jQuery ::..</title>
 </head>
 <body>
+    <style type="text/css">
+        .col-1{ width: 8.33%; }
+        .col-12{ width: 100%; }
+    </style>
     <h1>jQuery</h1>
+    <p>
+        <button type="button">Muda tamanho</button>
+    </p>
     <ul>
         <li>
-            <img src="img/post.jpg" />
+            <img src="img/post1.jpg" class="col-1" />
             <button type="button" id="hide">Hide</button>
             <button type="button" id="show">Show</button>
+        </li>
+        <li>
+            <img src="img/post2.jpg" class="col-1" />
+            <button type="button" id="slideup">Slide Up</button>
+            <button type="button" id="slidedown">Slide Down</button>
+        </li>
+        <li>
+            <img src="img/post3.jpg" class="col-1" />
+            <button type="button" id="fadeout">Fade Out</button>
+            <button type="button" id="fadein">Fade In</button>
+        </li>
+        <li>
+            <img src="img/post4.jpg" class="col-1" />
+            <button type="button" id="toggle">Toggle</button>
+        </li>
+        <li>
+            <img src="img/post5.jpg" class="col-1" />
+            <button type="button" id="slideToggle">Slide Toggle</button>
+        </li>
+        <li>
+            <img src="img/post6.jpg" class="col-1" />
+            <button type="button" id="fadeToggle">Fade Toggle</button>
         </li>
     </ul>
 </body>
