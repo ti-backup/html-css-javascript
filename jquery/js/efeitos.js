@@ -20,7 +20,7 @@ $(document).ready(function(){
     });
 
     $("#fadein").click(function(){
-        $("img[src*='post4']").fadeIn();
+        $("img[src*='post3']").fadeIn();
     });
 
     $("#toggle").click(function(){
